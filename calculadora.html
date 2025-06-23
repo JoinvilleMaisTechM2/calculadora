@@ -3,36 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Calculadora</title>
 </head>
 <body>
 
-    <input type="text" id="n1"><br>
+<div class="calculadora">
+    <input type="text" id="n1">
 
-    <button onclick="clear()">C</button>
-    <button onclick="porcentagem()">%</button>
-    <button onclick="raiz()">√</button><br>
+    <div class="linha">
+        <button onclick="clear()">C</button>
+        <button onclick="porcentagem()">%</button>
+        <button onclick="raiz()">√</button>
+        <button onclick="somar()" class="operador">+</button>
+    </div>
 
-    <button onclick="seven()">7</button>
-    <button onclick="eight()">8</button>
-    <button onclick="nine()">9</button><br>
-    
-    <button onclick="four()">4</button>
-    <button onclick="five()">5</button>
-    <button onclick="six()">6</button><br>
+    <div class="linha">
+        <button onclick="seven()">7</button>
+        <button onclick="eight()">8</button>
+        <button onclick="nine()">9</button>
+        <button onclick="subtrair()" class="operador">-</button>
+    </div>
 
-    <button onclick="one()">1</button>
-    <button onclick="two()">2</button>
-    <button onclick="three()">3</button><br>
+    <div class="linha">
+        <button onclick="four()">4</button>
+        <button onclick="five()">5</button>
+        <button onclick="six()">6</button>
+        <button onclick="multiplicar()" class="operador">x</button>
+    </div>
 
-    <button onclick="zero()">0</button>
-    <button onclick="equal()">=</button>
-    <button onclick="virgula()">,</button><br>
+    <div class="linha">
+        <button onclick="one()">1</button>
+        <button onclick="two()">2</button>
+        <button onclick="three()">3</button>
+        <button onclick="dividir()" class="operador">/</button>
+    </div>
 
-    <button onclick="somar()">+</button>
-    <button onclick="subtrair()">-</button>
-    <button onclick="multiplicar()">x</button>
-    <button onclick="dividir()">/</button>
+    <div class="linha">
+        <button onclick="zero()">0</button>
+        <button onclick="virgula()">,</button>
+        <button onclick="equal()" id="igual">=</button>
+    </div>
+</div>
 
 </body>
 </html>
